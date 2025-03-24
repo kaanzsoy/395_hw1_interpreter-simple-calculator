@@ -1,5 +1,11 @@
 # README
 
+### BIL 395 Ödev 1
+### Adı Soyadı:
+Hayrettin Kaan Özsoy
+### Öğrenci Numarası:
+201104086
+
 ## Proje Adı
 Lex ve Yacc ile Basit Hesap Makinesi
 
