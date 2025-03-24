@@ -82,58 +82,64 @@ Bu projede, Lex ve Yacc kullanarak basit bir hesap makinesi yorumlayıcısı (in
 
 <Basit Aritmetik İfadeler>
 
-```Input:``` 3+5
-```Output:``` 8
+```Input:``` 7+9
+```Output:``` 16
 
-```Input:``` 10 * 4
-```Output:``` 40
+```Input:``` 12 - 5
+```Output:``` 7
+
+```Input:``` 6 * 8
+```Output:``` 48
+
+```Input:``` 24 / 6
+```Output:``` 4
 
 <Parantezli İfadeler>
 
-```Input:``` (1+2) * 4
-```Output:``` 32
+```Input:``` (2 + 4) * 3
+```Output:``` 18
 
-```Input:``` (3-5) / 2
-```Output:``` -1
+```Input:``` (10-8) / 2
+```Output:``` 1
 
 <Daha Karmaşık İfadeler>
 
-```Input:``` (3 + 5) * (2 - 1) / 4
-```Output:``` 2
+```Input:``` (2 + 2) * (5 - 1) / 2
+```Output:``` 8
 
-```Input:``` 1 + 2 * 3
-```Output:``` 7
+```Input:``` 3 + 4 * 2 - (1 / (2 + 1))
+```Output:``` 10.6667
 
 <Sıfıra Bölme Kontrolü>
 
-```Input:``` 10 / 0
+```Input:``` 15 / 0
 ```Output:``` Division by zero error!
 
 <Floating-Point (Ondalıklı) İfadeler>
 
-```Input:``` 3.5 + 2.2
-```Output:``` 5.7
+```Input:``` 4.2 + 1.3
+```Output:``` 5.5
 
-```Input:``` 2.0 * 3.5
-```Output:``` 7.0
+```Input:``` 10.0 / 2.5
+```Output:``` 4.0
 
 <Us Alma (Exponentiation)>
 
-```Input:``` 2 ^ 3
-```Output:``` 8
+```Input:``` 3 ^ 4
+```Output:``` 81
 
 ```Input:``` 2 ^ 3 ^ 2
 ```Output:``` 512
 
-```Input:``` (2 + 3) ^ 2
-```Output:``` 25
+```Input:``` (1 + 2) ^ 3
+```Output:``` 27
 
 <Geçersiz Karakter ve Diğer Hatalar>
 
-```Input:``` 3 # 5
+```Input:``` 4 $ 2
 ```Output:``` Unknown character
 
-```Input:``` ((3 + 5)
+```Input:``` ((4 + 5)
 ```Output:``` Error: syntax error
 
 
