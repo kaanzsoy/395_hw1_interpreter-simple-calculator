@@ -6,6 +6,7 @@
 
 // Function prototypes (bu sekilde tanimlanmayinca implicit declaration hatasi aldik)
 int yylex(void);
+int yyparse(void);
 int yyerror(const char *s);
 %}
 
@@ -31,10 +32,16 @@ input:
     | input line
     ;
 
-/* Tek satir -> bos satir veya 'expr' ile biten satir */
 line:
-      '\n'
-    | expr '\n'  { printf("Output: %g\n", $1); }
+    expr '\n'  
+        {
+          printf("Output: %g\n", $1);
+          printf("Input:\n");
+        }
+    | '\n'
+        {
+          printf("Input:\n");
+        }
     ;
 
 /* Aritmetik ifadeler */
@@ -65,7 +72,7 @@ int main(void) {
     return 0;
 }
 
-/* Hata mesaji yazdiran fonksiyon */
+/* Hata mesaji*/
 int yyerror(const char *s) {
     fprintf(stderr, "Error: %s\n", s);
     return 0;
