@@ -1,13 +1,13 @@
 # README
 
-# Proje Adı
+## Proje Adı
 Lex ve Yacc ile Basit Hesap Makinesi
 
-# Proje Amacı
+## Proje Amacı
 
 Bu projede, Lex ve Yacc kullanarak basit bir hesap makinesi yorumlayıcısı (interpreter) geliştirilmiştir. Program, kullanıcıdan aritmetik ifadeler alarak bunları ayrıştırır (parse) ve sonuçlarını ekrana yazdırır. Ayrıca, ondalıklı (floating-point) sayı desteği ve üs alma (exponentiation) işlemlerini de içermektedir.
 
-# Dosya Açıklamaları
+## Dosya Açıklamaları
 
 ```calculator.l:```
 - Lex (Flex) tanımlamalarını içerir.
@@ -24,7 +24,7 @@ Bu projede, Lex ve Yacc kullanarak basit bir hesap makinesi yorumlayıcısı (in
 
 - Örnek: ```expr -> expr PLUS expr``` ile toplama işlemi tanımlanmıştır.
 
-# Özellikler
+## Özellikler
 
 1. Tam sayılar ve ondalıklı sayılar (floating-point) desteklenir.
 
@@ -48,7 +48,7 @@ Bu projede, Lex ve Yacc kullanarak basit bir hesap makinesi yorumlayıcısı (in
 
     - Söz dizimi hatası (syntax error) durumunda bir uyarı verir.
 
-# Kurulum ve Çalıştırma
+## Kurulum ve Çalıştırma
 
 1. Gerekli Bağımlılıklar:
     - Linux/Unix ortamında Flex, Bison ve GCC yüklü olmalıdır.
@@ -78,7 +78,7 @@ Bu projede, Lex ve Yacc kullanarak basit bir hesap makinesi yorumlayıcısı (in
     Komut satırında **“Input”** mesajı çıktıktan sonra aritmetik ifadeyi girebilirsiniz. Enter’a basıldığında sonuç ekranda görüntülenir.
 
 
-# TEST SENARYOLARI
+## TEST SENARYOLARI
 
 <Basit Aritmetik İfadeler>
 
